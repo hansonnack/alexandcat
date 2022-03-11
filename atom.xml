@@ -1,31 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansonnack.github.io/alexandcat/</id>
-    <title>桂中医学工</title>
-    <updated>2022-03-11T14:41:14.838Z</updated>
+    <title>Alexandcat</title>
+    <updated>2022-03-11T17:10:27.630Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansonnack.github.io/alexandcat/"/>
     <link rel="self" href="https://hansonnack.github.io/alexandcat/atom.xml"/>
+    <subtitle>Alexandcat&apos;s Webpage
+Powered by Gridea</subtitle>
     <logo>https://hansonnack.github.io/alexandcat/images/avatar.png</logo>
     <icon>https://hansonnack.github.io/alexandcat/favicon.ico</icon>
-    <rights>All rights reserved 2022, 桂中医学工</rights>
+    <rights>All rights reserved 2022, Alexandcat</rights>
     <entry>
-        <title type="html"><![CDATA[导航]]></title>
-        <id>https://hansonnack.github.io/alexandcat/post/dao-hang/</id>
-        <link href="https://hansonnack.github.io/alexandcat/post/dao-hang/">
+        <title type="html"><![CDATA[使用Github Desktop配合Gridea创建静态页面博客]]></title>
+        <id>https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/</id>
+        <link href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">
         </link>
-        <updated>2022-03-10T16:10:52.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="学生事务"><a href="https://hansonnack.github.io/gzyxg/post/xue-sheng-shi-wu/">📄学生事务</a></h2>
-<hr>
-<h2 id="奖助勤贷"><a href="https://hansonnack.github.io/gzyxg/post/jiang-zhu-qin-dai/">📔奖助勤贷</a></h2>
-<hr>
-<h2 id="心理健康"><a href="https://hansonnack.github.io/gzyxg/post/xin-li-jian-kang/">📕心理健康</a></h2>
-<hr>
-<h2 id="思想引领"><a href="https://hansonnack.github.io/gzyxg/post/si-xiang-yin-ling/">📗思想引领</a></h2>
-<hr>
-<h2 id="五德易班"><a href="https://hansonnack.github.io/gzyxg/post/wu-de-yi-ban/">📙五德易班</a></h2>
-<hr>
-<h2 id="喜迎党的二十大"><a href="https://hansonnack.github.io/gzyxg/post/xi-ying-dang-de-er-shi-da/">📒喜迎党的二十大</a></h2>
+        <updated>2022-03-11T17:02:49.000Z</updated>
+        <content type="html"><![CDATA[<p>总所周知，Github的访问经常抽风</p>
 ]]></content>
     </entry>
     <entry>
