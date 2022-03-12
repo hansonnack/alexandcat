@@ -1,128 +1,85 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" >
-
+<html lang="zh-CN">
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
 <title>如何对隔壁仓库在校园网中进行维护 | Alexandcat</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://hansonnack.github.io/alexandcat//favicon.ico?v=1647059537878">
-<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//styles/main.css">
-
-
-
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速
-首先下载Dev-Sidecar，安装根证书并打开代理模式。
-然后以上一篇的方式进行维护即可
-..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://hansonnack.github.io/alexandcat/">
-        <img src="https://hansonnack.github.io/alexandcat//images/avatar.png?v=1647059537878" class="site-logo">
-        <h1 class="site-title">Alexandcat</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/mdui.min.css">
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/modify.css">
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/github-gist.min.css">
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/railscasts.min.css">
+</head>
+<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://hansonnack.github.io/alexandcat/" class="mdui-typo-headline">Alexandcat</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+        </div>
     </div>
-    <div>
-      
+</header>
+
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="https://hansonnack.github.io/alexandcat/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
         
-          <a href="https://hansonnack.github.io/alexandcat/" class="site-nav">
-            首页
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      Alexandcat's Webpage
-Powered by Gridea
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://hansonnack.github.io/alexandcat//atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
+</nav>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">如何对隔壁仓库在校园网中进行维护</h2>
-            <div class="post-date">2022-03-12</div>
-            
-            <div class="post-content" v-pre>
-              <p><em>在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速</em><br>
+<main class="mdui-container mdui-typo mdui-m-t-2">
+    <section class="mdui-card">
+        
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">如何对隔壁仓库在校园网中进行维护</div>
+            <div class="mdui-card-primary-subtitle">发布于 2022-03-12，包含标签 。</div>
+        </div>
+        <div class="mdui-card-content"><p><em>在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速</em><br>
 首先下载<a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a>，安装根证书并打开代理模式。<br>
 然后以上一篇的方式进行维护即可</p>
-
-            </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">
-                  <h3 class="post-title">
-                    使用Github Desktop配合Gridea创建静态页面博客
-                  </h3>
-                </a>
-              </div>
-            
-
-            
-
-          </div>
-
+</div>
+        <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="https://hansonnack.github.io/alexandcat//images/avatar.png">
+            <div class="mdui-card-header-title">Alexandcat</div>
+            <div class="mdui-card-header-subtitle">Alexandcat's Webpage
+Powered by Gridea</div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+      
+</main>
 
-AOS.init();
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    <a href="https://hansonnack.github.io/alexandcat/post/jiang-xiu-mi-yin-ru-github-pages-de-liu-cheng/" mdui-tooltip="{content: '上一篇', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button>将秀米引入Github Pages的流程</a>
+    <a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/" mdui-tooltip="{content: '下一篇', position: 'left'}" class="mdui-float-right">使用Github Desktop配合Gridea创建静态页面博客<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-l-1"><i class="mdui-icon material-icons">arrow_forward</i></button></a>
+</nav>
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
 
+<script src="https://hansonnack.github.io/alexandcat//media/js/jquery.min.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/mdui.min.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/modify.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/highlight.min.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/lightense.min.js"></script>
+<script>
+// 初始化-高亮代码
+hljs.initHighlightingOnLoad();
+// 初始化-文章图片放大
+window.addEventListener('load', function () {
+    Lightense('#post .mdui-card-content img');
+}, false);
 </script>
 
-
-
-
-
-
-  </body>
+</body>
 </html>
