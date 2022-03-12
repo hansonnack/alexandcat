@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansonnack.github.io/alexandcat/</id>
     <title>Alexandcat</title>
-    <updated>2022-03-12T06:23:17.708Z</updated>
+    <updated>2022-03-12T06:26:04.199Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansonnack.github.io/alexandcat/"/>
     <link rel="self" href="https://hansonnack.github.io/alexandcat/atom.xml"/>
@@ -12,13 +12,17 @@ Powered by Gridea</subtitle>
     <icon>https://hansonnack.github.io/alexandcat/favicon.ico</icon>
     <rights>All rights reserved 2022, Alexandcat</rights>
     <entry>
-        <title type="html"><![CDATA[将秀米引入Github Pages的流程]]></title>
+        <title type="html"><![CDATA[将秀米编辑器的html文件引入Github Pages的流程]]></title>
         <id>https://hansonnack.github.io/alexandcat/post/jiang-xiu-mi-yin-ru-github-pages-de-liu-cheng/</id>
         <link href="https://hansonnack.github.io/alexandcat/post/jiang-xiu-mi-yin-ru-github-pages-de-liu-cheng/">
         </link>
         <updated>2022-03-12T06:15:36.000Z</updated>
+        <summary type="html"><![CDATA[<p>⚠️注意：若你之前有手动放置文件或文件夹到构建后文件夹（ output 文件夹）本次升级有非兼容升级，请看下升级说明，若没有，可直接升级啦</p>
+<p>升级说明： 需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）</p>
+]]></summary>
         <content type="html"><![CDATA[<p>⚠️注意：若你之前有手动放置文件或文件夹到构建后文件夹（ output 文件夹）本次升级有非兼容升级，请看下升级说明，若没有，可直接升级啦</p>
 <p>升级说明： 需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）</p>
+<!-- more -->
 ]]></content>
     </entry>
     <entry>
