@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansonnack.github.io/alexandcat/</id>
     <title>Alexandcat</title>
-    <updated>2022-03-11T17:23:14.596Z</updated>
+    <updated>2022-03-12T02:35:54.633Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansonnack.github.io/alexandcat/"/>
     <link rel="self" href="https://hansonnack.github.io/alexandcat/atom.xml"/>
@@ -12,12 +12,24 @@ Powered by Gridea</subtitle>
     <icon>https://hansonnack.github.io/alexandcat/favicon.ico</icon>
     <rights>All rights reserved 2022, Alexandcat</rights>
     <entry>
+        <title type="html"><![CDATA[如何对隔壁仓库在校园网中进行维护]]></title>
+        <id>https://hansonnack.github.io/alexandcat/post/ru-he-dui-ge-bi-cang-ku-zai-xiao-yuan-wang-zhong-jin-xing-wei-hu/</id>
+        <link href="https://hansonnack.github.io/alexandcat/post/ru-he-dui-ge-bi-cang-ku-zai-xiao-yuan-wang-zhong-jin-xing-wei-hu/">
+        </link>
+        <updated>2022-03-12T02:32:22.000Z</updated>
+        <content type="html"><![CDATA[<p><em>在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速</em><br>
+首先下载<a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a></p>
+]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[使用Github Desktop配合Gridea创建静态页面博客]]></title>
         <id>https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/</id>
         <link href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">
         </link>
         <updated>2022-03-11T17:02:49.000Z</updated>
-        <content type="html"><![CDATA[<p>总所周知，Github的访问经常抽风</p>
+        <content type="html"><![CDATA[<p><em>众所周知，Github的访问经常抽风，因此依赖于Git的Gridea便经常发生“同步失败”的情况，在看了一大堆的网页资料之后，我终于找到了正常同步的方法。</em></p>
+<p><code>说明：在实体机内，我安装Git加Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行</code><br>
+首先安装Github Desktop，登录自己的账号，并将仓库clone到本地，将Gredia文件夹中的output文件夹删除，在本地存储目录中新建这个文件夹。在之后的更新中便可以点击Gridea的“同步”按钮更新本地文件，此时Github客户端会检测到更改，添加commit并push到仓库即可。</p>
 ]]></content>
     </entry>
     <entry>
