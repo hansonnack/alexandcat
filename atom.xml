@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansonnack.github.io/alexandcat/</id>
     <title>Alexandcat</title>
-    <updated>2022-03-12T02:35:54.633Z</updated>
+    <updated>2022-03-12T04:24:32.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansonnack.github.io/alexandcat/"/>
     <link rel="self" href="https://hansonnack.github.io/alexandcat/atom.xml"/>
@@ -18,7 +18,8 @@ Powered by Gridea</subtitle>
         </link>
         <updated>2022-03-12T02:32:22.000Z</updated>
         <content type="html"><![CDATA[<p><em>在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速</em><br>
-首先下载<a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a></p>
+首先下载<a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a>，安装根证书并打开代理模式。<br>
+然后以上一篇的方式进行维护即可</p>
 ]]></content>
     </entry>
     <entry>
@@ -28,8 +29,13 @@ Powered by Gridea</subtitle>
         </link>
         <updated>2022-03-11T17:02:49.000Z</updated>
         <content type="html"><![CDATA[<p><em>众所周知，Github的访问经常抽风，因此依赖于Git的Gridea便经常发生“同步失败”的情况，在看了一大堆的网页资料之后，我终于找到了正常同步的方法。</em></p>
-<p><code>说明：在实体机内，我安装Git加Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行</code><br>
-首先安装Github Desktop，登录自己的账号，并将仓库clone到本地，将Gredia文件夹中的output文件夹删除，在本地存储目录中新建这个文件夹。在之后的更新中便可以点击Gridea的“同步”按钮更新本地文件，此时Github客户端会检测到更改，添加commit并push到仓库即可。</p>
+<h2 id="说明在实体机内我安装git加gridea就可以在github没有被dns污染的情况下正常更新因此下面的方法基于虚拟机内的windows-81-enterprise-x64下进行首先安装github-desktop登录自己的账号并将仓库clone到本地将gredia文件夹中的output文件夹删除在本地存储目录中新建这个文件夹-在之后的更新中便可以点击gridea的同步按钮更新本地文件此时github客户端会检测到更改添加commit并push到仓库-当然如果你的gridea能够正常同步那么直接下载git安装就可以使用自带的同步功能了"><code>说明：在实体机内，我安装Git加Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行</code><br>
+首先安装Github Desktop，登录自己的账号，并将仓库clone到本地，将Gredia文件夹中的output文件夹删除，在本地存储目录中新建这个文件夹。在之后的更新中便可以点击Gridea的“同步”按钮更新本地文件，此时Github客户端会检测到更改，添加commit并push到仓库。<br>
+当然如果你的Gridea能够正常同步，那么直接下载Git安装，就可以使用自带的同步功能了。</h2>
+<p>软件下载地址：<br>
+Gridea：https://gridea.dev/<br>
+Github Desktop：https://desktop.github.com/<br>
+Git：https://git-scm.com/download/win</p>
 ]]></content>
     </entry>
     <entry>
