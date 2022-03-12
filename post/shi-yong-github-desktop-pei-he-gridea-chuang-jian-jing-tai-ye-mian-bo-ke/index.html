@@ -48,13 +48,29 @@
             <div class="mdui-card-primary-subtitle">发布于 2022-03-12，包含标签 。</div>
         </div>
         <div class="mdui-card-content"><p><em>众所周知，Github的访问经常抽风，因此依赖于Git的Gridea便经常发生“同步失败”的情况，在看了一大堆的网页资料之后，我终于找到了正常同步的方法。</em></p>
-<h2 id="说明在实体机内我安装git加gridea就可以在github没有被dns污染的情况下正常更新因此下面的方法基于虚拟机内的windows-81-enterprise-x64下进行首先安装github-desktop登录自己的账号并将仓库clone到本地将gredia文件夹中的output文件夹删除在本地存储目录中新建这个文件夹-在之后的更新中便可以点击gridea的同步按钮更新本地文件此时github客户端会检测到更改添加commit并push到仓库-当然如果你的gridea能够正常同步那么直接下载git安装就可以使用自带的同步功能了"><code>说明：在实体机内，我安装Git加Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行</code><br>
-首先安装Github Desktop，登录自己的账号，并将仓库clone到本地，将Gredia文件夹中的output文件夹删除，在本地存储目录中新建这个文件夹。在之后的更新中便可以点击Gridea的“同步”按钮更新本地文件，此时Github客户端会检测到更改，添加commit并push到仓库。<br>
-当然如果你的Gridea能够正常同步，那么直接下载Git安装，就可以使用自带的同步功能了。</h2>
-<p>软件下载地址：<br>
-Gridea：https://gridea.dev/<br>
-Github Desktop：https://desktop.github.com/<br>
-Git：https://git-scm.com/download/win</p>
+<pre><code>Git的访问有时出问题，导致Gridea经常同步失败，因此可以使用GitHub Desktop承担同步作用。
+说明：在实体机内，我安装Git与Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行。
+</code></pre>
+<h2 id="准备工作">准备工作</h2>
+<p>安装好需要的软件：<br>
+<a href="https://gridea.dev/">Gridea</a><a href="https://desktop.github.com/">Github Desktop</a><a href="https://git-scm.com/download/win">Git</a></p>
+<h2 id="开始搭建">开始搭建</h2>
+<ol>
+<li>注册GitHub账号，创建一个库并开启GitHub Pages功能</li>
+<li>在个人设置中创建token</li>
+<li>在Gridea的“远程”选项卡中填入信息</li>
+<li>点击“同步”按钮测试，若可行，下文可以忽略。</li>
+<li>直接打开你的GitHub页面看看效果吧</li>
+</ol>
+<hr>
+<p><em>同步失败的替代解决方案</em></p>
+<ul>
+<li>打开GitHub Desktop，登陆你的账号</li>
+<li>在右侧找到你的网页所在的库，点击克隆到本地，但不要点击确定</li>
+<li>把上述提到的clone目录设定到Gridea文件夹中的“output‘文件夹，然后点击确定git到本地</li>
+<li>再次点击Gridea中的同步按钮，便可以在GitHub Desktop中看到变化</li>
+<li>添加commit并上传到库中</li>
+</ul>
 </div>
         <div class="mdui-card-header">
             <img class="mdui-card-header-avatar" src="https://hansonnack.github.io/alexandcat//images/avatar.png">
@@ -68,7 +84,7 @@ Powered by Gridea</div>
 </main>
 
 <nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
-    <a href="https://hansonnack.github.io/alexandcat/post/ru-he-dui-ge-bi-cang-ku-zai-xiao-yuan-wang-zhong-jin-xing-wei-hu/" mdui-tooltip="{content: '上一篇', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button>如何对隔壁仓库在校园网中进行维护</a>
+    <a href="https://hansonnack.github.io/alexandcat/post/ru-he-dui-ge-bi-cang-ku-zai-xiao-yuan-wang-zhong-jin-xing-wei-hu/" mdui-tooltip="{content: '上一篇', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button>维护指南</a>
     <a href="https://hansonnack.github.io/alexandcat/post/about/" mdui-tooltip="{content: '下一篇', position: 'left'}" class="mdui-float-right">关于<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-l-1"><i class="mdui-icon material-icons">arrow_forward</i></button></a>
 </nav>
 

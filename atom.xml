@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansonnack.github.io/alexandcat/</id>
     <title>Alexandcat</title>
-    <updated>2022-03-12T06:50:23.282Z</updated>
+    <updated>2022-03-12T09:09:32.838Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansonnack.github.io/alexandcat/"/>
     <link rel="self" href="https://hansonnack.github.io/alexandcat/atom.xml"/>
@@ -11,6 +11,15 @@ Powered by Gridea</subtitle>
     <logo>https://hansonnack.github.io/alexandcat/images/avatar.png</logo>
     <icon>https://hansonnack.github.io/alexandcat/favicon.ico</icon>
     <rights>All rights reserved 2022, Alexandcat</rights>
+    <entry>
+        <title type="html"><![CDATA[使用坚果云在不同设备间共享博客库]]></title>
+        <id>https://hansonnack.github.io/alexandcat/post/shi-yong-jian-guo-yun-zai-bu-tong-she-bei-jian-gong-xiang-bo-ke-ku/</id>
+        <link href="https://hansonnack.github.io/alexandcat/post/shi-yong-jian-guo-yun-zai-bu-tong-she-bei-jian-gong-xiang-bo-ke-ku/">
+        </link>
+        <updated>2022-03-12T09:09:18.000Z</updated>
+        <content type="html"><![CDATA[<p>将gridea文件夹同步，增删实时同步，上传使用前文所述的技巧即可。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[将秀米编辑器的html文件引入Github Pages的流程]]></title>
         <id>https://hansonnack.github.io/alexandcat/post/jiang-xiu-mi-yin-ru-github-pages-de-liu-cheng/</id>
@@ -26,14 +35,20 @@ Powered by Gridea</subtitle>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[如何对隔壁仓库在校园网中进行维护]]></title>
+        <title type="html"><![CDATA[维护指南]]></title>
         <id>https://hansonnack.github.io/alexandcat/post/ru-he-dui-ge-bi-cang-ku-zai-xiao-yuan-wang-zhong-jin-xing-wei-hu/</id>
         <link href="https://hansonnack.github.io/alexandcat/post/ru-he-dui-ge-bi-cang-ku-zai-xiao-yuan-wang-zhong-jin-xing-wei-hu/">
         </link>
         <updated>2022-03-12T02:32:22.000Z</updated>
-        <content type="html"><![CDATA[<p><em>在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速</em><br>
-首先下载<a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a>，安装根证书并打开代理模式。<br>
-然后以上一篇的方式进行维护即可</p>
+        <content type="html"><![CDATA[<h2 id="如何对在校园网不佳的网络环境中进行维护">如何对在校园网/不佳的网络环境中进行维护</h2>
+<p>/在校园网环境下，Github被封得彻底，在部分环境下更新网站内容的步骤基本不可用，因此在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速。/<br>
+首先下载 <a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a> ，安装根证书并打开增强模式。<br>
+然后以<a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">这篇文章</a>中的方式进行维护即可。</p>
+<h2 id="秀米编辑器的内容如何放到网站中">秀米编辑器的内容如何放到网站中</h2>
+<p>秀米编辑好的内容放入96编辑器中获得html源代码，复制进记事本中，命名为<code>标题.html</code></p>
+<pre><code>需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）
+</code></pre>
+<p>便可以在导航中添加网址，格式如下：<code>username.github.io/name/title.html</code></p>
 ]]></content>
     </entry>
     <entry>
@@ -43,13 +58,29 @@ Powered by Gridea</subtitle>
         </link>
         <updated>2022-03-11T17:02:49.000Z</updated>
         <content type="html"><![CDATA[<p><em>众所周知，Github的访问经常抽风，因此依赖于Git的Gridea便经常发生“同步失败”的情况，在看了一大堆的网页资料之后，我终于找到了正常同步的方法。</em></p>
-<h2 id="说明在实体机内我安装git加gridea就可以在github没有被dns污染的情况下正常更新因此下面的方法基于虚拟机内的windows-81-enterprise-x64下进行首先安装github-desktop登录自己的账号并将仓库clone到本地将gredia文件夹中的output文件夹删除在本地存储目录中新建这个文件夹-在之后的更新中便可以点击gridea的同步按钮更新本地文件此时github客户端会检测到更改添加commit并push到仓库-当然如果你的gridea能够正常同步那么直接下载git安装就可以使用自带的同步功能了"><code>说明：在实体机内，我安装Git加Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行</code><br>
-首先安装Github Desktop，登录自己的账号，并将仓库clone到本地，将Gredia文件夹中的output文件夹删除，在本地存储目录中新建这个文件夹。在之后的更新中便可以点击Gridea的“同步”按钮更新本地文件，此时Github客户端会检测到更改，添加commit并push到仓库。<br>
-当然如果你的Gridea能够正常同步，那么直接下载Git安装，就可以使用自带的同步功能了。</h2>
-<p>软件下载地址：<br>
-Gridea：https://gridea.dev/<br>
-Github Desktop：https://desktop.github.com/<br>
-Git：https://git-scm.com/download/win</p>
+<pre><code>Git的访问有时出问题，导致Gridea经常同步失败，因此可以使用GitHub Desktop承担同步作用。
+说明：在实体机内，我安装Git与Gridea就可以在Github没有被DNS污染的情况下正常更新，因此下面的方法基于虚拟机内的Windows 8.1 Enterprise X64下进行。
+</code></pre>
+<h2 id="准备工作">准备工作</h2>
+<p>安装好需要的软件：<br>
+<a href="https://gridea.dev/">Gridea</a><a href="https://desktop.github.com/">Github Desktop</a><a href="https://git-scm.com/download/win">Git</a></p>
+<h2 id="开始搭建">开始搭建</h2>
+<ol>
+<li>注册GitHub账号，创建一个库并开启GitHub Pages功能</li>
+<li>在个人设置中创建token</li>
+<li>在Gridea的“远程”选项卡中填入信息</li>
+<li>点击“同步”按钮测试，若可行，下文可以忽略。</li>
+<li>直接打开你的GitHub页面看看效果吧</li>
+</ol>
+<hr>
+<p><em>同步失败的替代解决方案</em></p>
+<ul>
+<li>打开GitHub Desktop，登陆你的账号</li>
+<li>在右侧找到你的网页所在的库，点击克隆到本地，但不要点击确定</li>
+<li>把上述提到的clone目录设定到Gridea文件夹中的“output‘文件夹，然后点击确定git到本地</li>
+<li>再次点击Gridea中的同步按钮，便可以在GitHub Desktop中看到变化</li>
+<li>添加commit并上传到库中</li>
+</ul>
 ]]></content>
     </entry>
     <entry>

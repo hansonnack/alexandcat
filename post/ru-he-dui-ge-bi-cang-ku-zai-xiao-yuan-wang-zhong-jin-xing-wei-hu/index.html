@@ -3,7 +3,7 @@
 <head>
 <!-- 必要参数 -->
 <meta charset="utf-8"/>
-<title>如何对隔壁仓库在校园网中进行维护 | Alexandcat</title>
+<title>维护指南 | Alexandcat</title>
 <meta name="keywords" content="关键词"/>
 <meta name="description" content="简述"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
@@ -40,12 +40,18 @@
     <section class="mdui-card">
         
         <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">如何对隔壁仓库在校园网中进行维护</div>
+            <div class="mdui-card-primary-title">维护指南</div>
             <div class="mdui-card-primary-subtitle">发布于 2022-03-12，包含标签 。</div>
         </div>
-        <div class="mdui-card-content"><p><em>在校园网环境下，Github被封得彻底，在办公室环境下更新网站内容基本不可用，在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速</em><br>
-首先下载<a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a>，安装根证书并打开代理模式。<br>
-然后以上一篇的方式进行维护即可</p>
+        <div class="mdui-card-content"><h2 id="如何对在校园网不佳的网络环境中进行维护">如何对在校园网/不佳的网络环境中进行维护</h2>
+<p>/在校园网环境下，Github被封得彻底，在部分环境下更新网站内容的步骤基本不可用，因此在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速。/<br>
+首先下载 <a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a> ，安装根证书并打开增强模式。<br>
+然后以<a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">这篇文章</a>中的方式进行维护即可。</p>
+<h2 id="秀米编辑器的内容如何放到网站中">秀米编辑器的内容如何放到网站中</h2>
+<p>秀米编辑好的内容放入96编辑器中获得html源代码，复制进记事本中，命名为<code>标题.html</code></p>
+<pre><code>需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）
+</code></pre>
+<p>便可以在导航中添加网址，格式如下：<code>username.github.io/name/title.html</code></p>
 </div>
         <div class="mdui-card-header">
             <img class="mdui-card-header-avatar" src="https://hansonnack.github.io/alexandcat//images/avatar.png">
