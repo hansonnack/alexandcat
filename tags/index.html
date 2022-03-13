@@ -1,59 +1,69 @@
+<!DOCTYPE html>
 <html>
-<head>
-<!-- 必要参数 -->
-<meta charset="utf-8"/>
-<title>Alexandcat</title>
-<meta name="keywords" content="关键词"/>
-<meta name="description" content="简述"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<link rel="shortcut icon" href="favicon.ico">
-<!-- CSS -->
-<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/mdui.min.css">
-<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/modify.css">
-</head>
-<body>
-<body class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
-<header role="banner">
-    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
-        <div class="mdui-toolbar">
-            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
-            <a href="https://hansonnack.github.io/alexandcat/" class="mdui-typo-headline">Alexandcat</a>
-            <div class="mdui-toolbar-spacer"></div>
-            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
-        </div>
-    </div>
-</header>
+            <head>
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
+        <meta charset="utf-8">
+        <title>Alexandcat</title>
+        <link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//styles/main.css">
+        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
+        <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+        <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+         <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+         <script >hljs.initHighlightingOnLoad();</script>
 
-<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
-    <ul class="mdui-list">
-        <a href="https://hansonnack.github.io/alexandcat/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+    </head>
+    <body>
+              <header class="header mdui-m-b-5">      
+            <div class="container  ">
+                <div class="index-title animated fadeInDown mdui-text-center mdui-text-color-white mdui-m-b-2" style="animation-delay: 0.2s"><a href="https://hansonnack.github.io/alexandcat/">Alexandcat</a></div>
+                <div class="mdui-text-color-white animated fadeInDown mdui-text-center  mdui-m-b-3" style="animation-delay: 0.4s">Alexandcat's Webpage
+Powered by Gridea</div>
+           
+            <nav id="nav" class="mdui-text-center animated fadeInDown" style="animation-delay: 0.6s">
+                   
+                            <li><a href="https://hansonnack.github.io/alexandcat/">首页</a>
+                                <span class="nav-style top"></span>
+                                <span class="nav-style bottom"></span>
+                                <span class="nav-style left"></span>
+                                <span class="nav-style right"></span>
+                                </li>
+                    
+                  </nav>
+                </div>
+        </header>
+        <div class="mdui-container ">
+                <div class="mdui-row">
+                        <div class="mdui-col-md-10 mdui-col-offset-md-1 mdui-m-t-1">
+                            <div class="mdui-row-md-3 mdui-row-xs-1">
+
+
+                                <article class="animated fadeIn" style="animation-delay:1s;animation-duration: 2s">
+                                        <div class="mdui-col mdui-p-a-1">
+                                          <div class="archives mdui-p-a-3">
+                                            <div class="mdui-m-b-2 archives-title"><a href="https://hansonnack.github.io/alexandcat/tag/tvWdZZOZs/">Gridea</a></div>
+                                            <div class="mdui-typo-subheading mdui-m-b-1 mdui-text-truncate">共有1篇文章</div>
+                                          </div>
+                                </article>
         
-        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
-    </ul>
-</nav>
+                              </div>
+                      
+                                    
+                        </div>
+                      </div>
+    
+                
 
-
-<main class="mdui-container mdui-m-t-2">
-    <div class="mdui-card">
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">标签列表</div>
-        </div>
-        <div class="mdui-card-actions">
-            
-                <a href="https://hansonnack.github.io/alexandcat/tag/tvWdZZOZs/" class="mdui-chip"><span class="mdui-chip-title">Gridea</span></a>
-            
-        </div>
-    </div>
-</main>
-
-<div class="mdui-m-t-2 mdui-text-center mdui-typo">
-    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-</div>
-
-<script src="https://hansonnack.github.io/alexandcat//media/js/jquery.min.js"></script>
-<script src="https://hansonnack.github.io/alexandcat//media/js/mdui.min.js"></script>
-<script src="https://hansonnack.github.io/alexandcat//media/js/modify.js"></script>
-
-</body>
+              </div>
+                     <footer class="footer mdui-m-t-5 mdui-text-center linshi">
+               <nav class="social-links">
+                      <ul>
+                        <li class="social-link"><a href="https://hansonnack.github.io/alexandcat//atom.xml" target="_blank"><i class="iconfont icon-rss"></i></a></li>
+                      </ul>
+                    </nav>
+                    <div class="copyright">
+                      <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> <br/> Theme <a href="https://github.com/alterfang/gridea-theme-song/" target="_blank"  title="宋"  >Song</a> by <a href="https://shanbu.fun/" target="_blank"  title="山卜方" >shanbufun</a> </p>
+                  </div>
+              </footer>
+    </body>
 </html>

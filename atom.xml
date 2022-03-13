@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://hansonnack.github.io/alexandcat/</id>
     <title>Alexandcat</title>
-    <updated>2022-03-12T09:11:30.424Z</updated>
+    <updated>2022-03-13T06:03:39.933Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://hansonnack.github.io/alexandcat/"/>
     <link rel="self" href="https://hansonnack.github.io/alexandcat/atom.xml"/>
@@ -48,7 +48,8 @@ Powered by Gridea</subtitle>
 <p>秀米编辑好的内容放入96编辑器中获得html源代码，复制进记事本中，命名为<code>标题.html</code></p>
 <pre><code>需手动复制到博客源文件夹的 static 文件夹（若无此文件夹可新建一个，新版使用时会自动生成，有静态文件需求的可放在此文件夹，构建时会直接复制到 output 文件夹）
 </code></pre>
-<p>便可以在导航中添加网址，格式如下：<code>username.github.io/name/title.html</code></p>
+<p>便可以在导航中添加网址，格式如下：<code>username.github.io/name/title.html</code><br>
+若要在文章列表中添加，请直接新建文章，将html代码复制进正文框中，即可直接在文章页使用秀米内容。</p>
 ]]></content>
     </entry>
     <entry>
