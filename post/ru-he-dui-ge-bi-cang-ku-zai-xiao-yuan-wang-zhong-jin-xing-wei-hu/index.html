@@ -1,44 +1,49 @@
 <!DOCTYPE html>
-<html>
-        <head>
-        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no" />
-        <meta charset="utf-8">
-        <title>维护指南 | Alexandcat</title>
-        <link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//styles/main.css">
-        <link rel="stylesheet" href="https://at.alicdn.com/t/font_1306644_jwtuc2zzbrd.css">
-        <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-        <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
-         <script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
-         <script >hljs.initHighlightingOnLoad();</script>
+<html lang="zh-CN">
+<head>
+<!-- 必要参数 -->
+<meta charset="utf-8"/>
+<title>维护指南 | Alexandcat</title>
+<meta name="keywords" content="关键词"/>
+<meta name="description" content="简述"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable:no"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="shortcut icon" href="favicon.ico">
+<!-- CSS -->
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/mdui.min.css">
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/modify.css">
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/github-gist.min.css">
+<link rel="stylesheet" href="https://hansonnack.github.io/alexandcat//media/css/railscasts.min.css">
+</head>
+<body id="post" class="mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue mdui-theme-layout-dark">
+<header role="banner">
+    <div class="mdui-appbar mdui-appbar-fixed mdui-appbar-scroll-hide mdui-shadow-0">
+        <div class="mdui-toolbar">
+            <button class="mdui-btn mdui-btn-icon" id="menu" mdui-drawer="{target:'#drawer',overlay:true,swipe:true}"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="https://hansonnack.github.io/alexandcat/" class="mdui-typo-headline">Alexandcat</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <button class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: '深色样式切换', position: 'left'}" id="DarkStyle"><i class="mdui-icon material-icons">brightness_4</i></button>
+        </div>
+    </div>
+</header>
 
-    </head>
-    <body>
-              <header class="header mdui-m-b-5">      
-            <div class="container  ">
-                <div class="index-title animated fadeInDown mdui-text-center mdui-text-color-white mdui-m-b-2" style="animation-delay: 0.2s"><a href="https://hansonnack.github.io/alexandcat/">Alexandcat</a></div>
-                <div class="mdui-text-color-white animated fadeInDown mdui-text-center  mdui-m-b-3" style="animation-delay: 0.4s">Alexandcat's Webpage
-Powered by Gridea</div>
-           
-            <nav id="nav" class="mdui-text-center animated fadeInDown" style="animation-delay: 0.6s">
-                   
-                            <li><a href="https://hansonnack.github.io/alexandcat/">首页</a>
-                                <span class="nav-style top"></span>
-                                <span class="nav-style bottom"></span>
-                                <span class="nav-style left"></span>
-                                <span class="nav-style right"></span>
-                                </li>
-                    
-                  </nav>
-                </div>
-        </header>
-        <div class="mdui-container ">
-                <div class="mdui-row">
-                        <div class="mdui-col-md-8 mdui-col-offset-md-2 ">
-                                <article class="mdui-p-a-2 post animated fadeIn" style="animation-delay: 0.8s;animation-duration: 2s">
-                                    <div class="post-title  mdui-m-b-1">维护指南</div>
-                                    <div class="mdui-typo-body-2 mdui-m-b-2" datetime="2022-03-12 10:32:22">2022-03-12 / 2 min read</div>
-                                    <div class="mdui-m-b-2 mdui-typo post-neirong"><h2 id="如何对在校园网不佳的网络环境中进行维护">如何对在校园网/不佳的网络环境中进行维护</h2>
+<nav id="drawer" class="mdui-drawer mdui-drawer-full-height mdui-drawer-close">
+    <ul class="mdui-list">
+        <a href="https://hansonnack.github.io/alexandcat/" class="menu"><li class="mdui-list-item mdui-ripple">首页</li></a>
+        
+        <a href="https://github.com/CPlayer-CN/gridea-theme-cplayer-material" class="spread"><li class="mdui-list-item mdui-ripple">主题主页</li></a>
+    </ul>
+</nav>
+
+
+<main class="mdui-container mdui-typo mdui-m-t-2">
+    <section class="mdui-card">
+        
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">维护指南</div>
+            <div class="mdui-card-primary-subtitle">发布于 2022-03-12，包含标签 。</div>
+        </div>
+        <div class="mdui-card-content"><h2 id="如何对在校园网不佳的网络环境中进行维护">如何对在校园网/不佳的网络环境中进行维护</h2>
 <p>/在校园网环境下，Github被封得彻底，在部分环境下更新网站内容的步骤基本不可用，因此在上一篇教程的基础上，还需要使用辅助工具对GitHub进行加速。/<br>
 首先下载 <a href="https://gitee.com/docmirror/dev-sidecar/releases">Dev-Sidecar</a> ，安装根证书并打开增强模式。<br>
 然后以<a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">这篇文章</a>中的方式进行维护即可。</p>
@@ -49,86 +54,39 @@ Powered by Gridea</div>
 <p>便可以在导航中添加网址，格式如下：<code>username.github.io/name/title.html</code><br>
 若要在文章列表中添加，请直接新建文章，将html代码复制进正文框中，即可直接在文章页使用秀米内容。</p>
 </div>
-                                    <div class="mdui-divider mdui-m-b-2"></div>
-                                    <div class="mdui-row-xs-2 post-fenye">
-                                       
-                                        <div class="mdui-col"> <div class="mdui-text-left"><a href="https://hansonnack.github.io/alexandcat/post/jiang-xiu-mi-yin-ru-github-pages-de-liu-cheng/">将秀米编辑器的html文件引入Github Pages的流程</a></div></div>
-                                        
+        <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="https://hansonnack.github.io/alexandcat//images/avatar.png">
+            <div class="mdui-card-header-title">Alexandcat</div>
+            <div class="mdui-card-header-subtitle">Alexandcat's Webpage
+Powered by Gridea</div>
+        </div>
+    </section>
 
-                                        
-                                        <div class="mdui-col"><div class="mdui-text-right "><a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/">使用Github Desktop配合Gridea创建静态页面博客</a></div> </div>
-                                       
-                                      </div>
-                                   
-                                    <div class="mdui-divider mdui-m-t-2 mdui-m-b-2"></div>
-                                    
-                                     <script src="https://hansonnack.github.io/alexandcat//media/scripts/Valine.min.js"></script>
- <div class="comment"></div>
+      
+</main>
 
+<nav class="mdui-container mdui-m-t-2 mdui-m-b-2">
+    <a href="https://hansonnack.github.io/alexandcat/post/jiang-xiu-mi-yin-ru-github-pages-de-liu-cheng/" mdui-tooltip="{content: '上一篇', position: 'right'}"><button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-r-1"><i class="mdui-icon material-icons">arrow_back</i></button>将秀米编辑器的html文件引入Github Pages的流程</a>
+    <a href="https://hansonnack.github.io/alexandcat/post/shi-yong-github-desktop-pei-he-gridea-chuang-jian-jing-tai-ye-mian-bo-ke/" mdui-tooltip="{content: '下一篇', position: 'left'}" class="mdui-float-right">使用Github Desktop配合Gridea创建静态页面博客<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-color-theme-accent mdui-ripple mdui-m-l-1"><i class="mdui-icon material-icons">arrow_forward</i></button></a>
+</nav>
+
+<div class="mdui-m-t-2 mdui-text-center mdui-typo">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+
+<script src="https://hansonnack.github.io/alexandcat//media/js/jquery.min.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/mdui.min.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/modify.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/highlight.min.js"></script>
+<script src="https://hansonnack.github.io/alexandcat//media/js/lightense.min.js"></script>
 <script>
-      new Valine({
-            el: '.comment',
-
-
-
-            path: window.location.pathname,
-            pageSize: 30,
-            avatar:'mm', 
-       })
-    </script> 
-<script>
-    if(window.location.hash){
-        var checkExist = setInterval(function() {
-           if ($(window.location.hash).length) {
-              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
-              clearInterval(checkExist);
-           }
-        }, 100);
-    }
+// 初始化-高亮代码
+hljs.initHighlightingOnLoad();
+// 初始化-文章图片放大
+window.addEventListener('load', function () {
+    Lightense('#post .mdui-card-content img');
+}, false);
 </script>
-                                </article>
 
-                                    
-                        </div>
-                      </div>
-    
-                
-
-              </div>
-                    <footer class="footer mdui-m-t-5 mdui-text-center">
-               <nav class="social-links">
-                      <ul>
-                      
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      
-                           
-                      </ul>
-                    </nav>
-                    <div class="copyright">
-                      <p>Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> <br/> Theme <a href="https://github.com/alterfang/gridea-theme-song/" target="_blank"  title="宋"  >Song</a> by <a href="https://shanbu.fun/" target="_blank"  title="山卜方" >shanbufun</a> </p>
-                  </div>
-                  
-              </footer>
-    </body>
+</body>
 </html>
